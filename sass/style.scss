@@ -1,6 +1,6 @@
 @import "_reset";
 @import "_fuentes";
-@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import "_ionicons.min.scss";
 
 $color_pag:#31AAE2;
 $color_pag2:white;
@@ -18,14 +18,18 @@ $color_pag2:white;
 body{
 	font-family: $fuente_textos;
 }
+h1, h2, h3, h4, h5, h6{
+	font-family: $fuente_titulos;
+}
 header{
 	background-image: url(../imagenes/header.jpg);
 	background-repeat:no-repeat;
 	background-size: cover;
-	height: 500px;
+	height: 600px;
 	nav{
 		padding: 20px 0;
 		overflow: auto;
+		border-bottom: 1px solid #D99A35;
 		img{
 			float:left;
 		}
@@ -72,6 +76,14 @@ header{
 			}
 
 		}
+	}
+	h1{
+		width: 150px;
+		color: $color_pag2;
+		font-size: 75px;
+		text-transform: uppercase;
+		padding-left:20px;
+		margin-top:50px;
 	}
 }
 
